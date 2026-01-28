@@ -1,0 +1,243 @@
+/* ===== RESET ===== */
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(1200px 600px at 50% -10%, #1a1f3c 0%, #0b0e1a 40%, #05060c 100%);
+  color: #eaeaff;
+  font-family: 'Inter', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ===== HEADER ===== */
+header {
+  padding: 20px 16px 12px;
+}
+
+header h1 {
+  margin: 0 0 14px;
+  font-size: 24px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #8f9bff, #c77dff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ===== NAV ===== */
+nav {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-btn {
+  flex: 1;
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.12);
+  padding: 12px;
+  border-radius: 14px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.nav-btn:hover {
+  background: rgba(143,155,255,0.2);
+}
+
+/* ===== PAGES ===== */
+.page {
+  display: none;
+  padding: 16px;
+}
+
+.page.active {
+  display: block;
+}
+
+/* ===== CATEGORY GRID ===== */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.category-card {
+  height: 120px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(143,155,255,0.35), rgba(199,125,255,0.18));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid rgba(255,255,255,0.2);
+  backdrop-filter: blur(16px);
+  transition: all 0.3s ease;
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(143,155,255,0.55);
+}
+
+.cat-icon {
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+/* ===== SERVICE GRID ===== */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+/* ===== CARDS ===== */
+.card {
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.08),
+    rgba(255,255,255,0.02)
+  );
+  border-radius: 20px;
+  padding: 16px;
+  border: 1px solid rgba(255,255,255,0.14);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+  transition: all 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 14px;
+  margin-bottom: 10px;
+}
+
+/* ===== TEXT ===== */
+.card h2,
+.card h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.card p {
+  font-size: 13px;
+  line-height: 1.45;
+  color: #cfd3ff;
+}
+
+/* ===== PRICE ===== */
+.price {
+  margin: 6px 0 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #9cffdf;
+}
+
+/* ===== BADGE ===== */
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #ffce6b, #ff7d7d);
+  color: #000;
+}
+
+/* ===== BUTTONS ===== */
+button {
+  width: 100%;
+  background: linear-gradient(135deg, #8f9bff, #c77dff);
+  border: none;
+  padding: 12px;
+  border-radius: 14px;
+  color: #0b0e1a;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+button:hover {
+  box-shadow: 0 0 25px rgba(199,125,255,0.7);
+}
+
+.order {
+  margin-top: 8px;
+  background: linear-gradient(135deg, #4cffc0, #4c7dff);
+}
+
+/* ===== BACK BUTTON ===== */
+.back-btn {
+  margin-bottom: 14px;
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+}
+
+/* ===== FADE ===== */
+.fade-in {
+  animation: fadeIn 0.35s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== FLOATING TELEGRAM AVATAR (КРУГ) ===== */
+.tg-float {
+  position: fixed;
+  bottom: 18px;
+  right: 18px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 9999;
+
+  animation: tg-float 4s ease-in-out infinite,
+             tg-pulse 2.8s infinite;
+
+  box-shadow: 0 12px 30px rgba(143,155,255,0.55);
+}
+
+.tg-float img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* движение */
+@keyframes tg-float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+/* пульсация */
+@keyframes tg-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(143,155,255,0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 14px rgba(143,155,255,0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(143,155,255,0);
+  }
+}
