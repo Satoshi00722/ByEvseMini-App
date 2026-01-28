@@ -133,20 +133,27 @@ function quickOrder(serviceName = "") {
 /* ===== CHANNELS ===== */
 function renderChannels() {
   const box = document.getElementById('channels');
-  box.innerHTML = `<h2>Наши каналы</h2>`;
+
+  box.innerHTML = `
+    <h2 class="section-title">Наши каналы</h2>
+    <div class="channels-grid"></div>
+  `;
+
+  const grid = box.querySelector('.channels-grid');
 
   CHANNELS.forEach(c => {
-    box.innerHTML += `
-      <div class="card fade-in">
-        <img src="${c.img}">
+    grid.innerHTML += `
+      <div class="channel-card fade-in">
+        <img src="${c.img}" alt="${c.name}">
         <h3>${c.name}</h3>
         <p>${c.desc}</p>
         <a href="${c.link}" target="_blank">
-          <button>Перейти</button>
+          <button class="order">Перейти в канал</button>
         </a>
       </div>
     `;
   });
+
+  showPage('channels');
 }
 
-renderChannels();
