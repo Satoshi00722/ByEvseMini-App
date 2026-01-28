@@ -69,9 +69,9 @@ const CATEGORIES = [
 ];
 const CHANNELS = [
   {
-    name: "ByEvse | Bots",
-    desc: "Новости, кейсы и разработки Telegram-ботов.",
-    link: "https://t.me/ByEvseBot",
+    name: "Прага Pragovka&PragaInfo #byevsi|e",
+    desc: "",
+    link: "https://t.me/byPRAGA",
     img: "img/channel-bot.jpg"
   },
   {
