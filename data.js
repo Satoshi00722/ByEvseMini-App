@@ -67,4 +67,25 @@ const CATEGORIES = [
     ]
   }
 ];
+const CHANNELS = [
+  {
+    name: "ByEvse | Bots",
+    desc: "Новости, кейсы и разработки Telegram-ботов.",
+    link: "https://t.me/ByEvseBot",
+    img: "img/channel-bot.jpg"
+  },
+  {
+    name: "ByEvse | Digital",
+    desc: "SMM, сайты, видео и digital-решения.",
+    link: "https://t.me/ByEvseDigital",
+    img: "img/channel-digital.jpg"
+  },
+  {
+    name: "ByEvse | Crypto",
+    desc: "Крипта, боты, автоматизация и арбитраж.",
+    link: "https://t.me/ByEvseCrypto",
+    img: "img/channel-crypto.jpg"
+  }
+];
+
 
