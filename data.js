@@ -75,15 +75,15 @@ const CHANNELS = [
     img: "img/channel-bot.jpg"
   },
   {
-    name: "ByEvse | Digital",
-    desc: "SMM, сайты, видео и digital-решения.",
-    link: "https://t.me/ByEvseDigital",
+    name: "Смех Продлевает Жизнь РЖИТЕ #byevsi|e",
+    desc: "",
+    link: "https://t.me/bysmex",
     img: "img/channel-digital.jpg"
   },
   {
-    name: "ByEvse | Crypto",
-    desc: "Крипта, боты, автоматизация и арбитраж.",
-    link: "https://t.me/ByEvseCrypto",
+    name: "Спорт Новости на SPORTIK #byevsi|e",
+    desc: "",
+    link: "https://t.me/sport_novosti0",
     img: "img/channel-crypto.jpg"
   }
 ];
