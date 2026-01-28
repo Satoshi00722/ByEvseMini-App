@@ -19,8 +19,8 @@ header {
 
 header h1 {
   margin: 0 0 14px;
-  font-size: 24px;
-  font-weight: 800;
+  font-size: 26px;
+  font-weight: 900;
   background: linear-gradient(90deg, #8f9bff, #c77dff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -35,18 +35,18 @@ nav {
 .nav-btn {
   flex: 1;
   background: rgba(255,255,255,0.06);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255,255,255,0.12);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.14);
   padding: 12px;
-  border-radius: 14px;
+  border-radius: 16px;
   color: #fff;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
   transition: all 0.25s ease;
 }
 
 .nav-btn:hover {
-  background: rgba(143,155,255,0.2);
+  background: rgba(143,155,255,0.25);
 }
 
 /* ===== PAGES ===== */
@@ -67,93 +67,96 @@ nav {
 }
 
 .category-card {
-  height: 120px;
-  border-radius: 20px;
-  background: linear-gradient(135deg, rgba(143,155,255,0.35), rgba(199,125,255,0.18));
+  height: 130px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, rgba(143,155,255,0.4), rgba(199,125,255,0.2));
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: 17px;
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: 800;
   color: #fff;
   cursor: pointer;
-  border: 1px solid rgba(255,255,255,0.2);
-  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255,255,255,0.25);
+  backdrop-filter: blur(18px);
   transition: all 0.3s ease;
 }
 
 .category-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 30px rgba(143,155,255,0.55);
+  transform: scale(1.06);
+  box-shadow: 0 0 35px rgba(143,155,255,0.6);
 }
 
 .cat-icon {
-  font-size: 28px;
-  margin-bottom: 6px;
+  font-size: 30px;
+  margin-bottom: 8px;
 }
 
-/* ===== SERVICE GRID ===== */
+/* ===== SERVICE GRID (ONE BIG CARD) ===== */
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 14px;
+  grid-template-columns: 1fr;
+  gap: 18px;
 }
 
-/* ===== CARDS ===== */
+/* ===== CARD ===== */
 .card {
   position: relative;
   background: linear-gradient(
     180deg,
-    rgba(255,255,255,0.08),
+    rgba(255,255,255,0.1),
     rgba(255,255,255,0.02)
   );
-  border-radius: 20px;
-  padding: 16px;
-  border: 1px solid rgba(255,255,255,0.14);
-  backdrop-filter: blur(14px);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+  border-radius: 24px;
+  padding: 18px;
+  border: 1px solid rgba(255,255,255,0.18);
+  backdrop-filter: blur(16px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.45);
   transition: all 0.3s ease;
 }
 
+/* BIG IMAGE */
 .card img {
   width: 100%;
-  border-radius: 14px;
-  margin-bottom: 10px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 18px;
+  margin-bottom: 14px;
 }
 
 /* ===== TEXT ===== */
 .card h2,
 .card h3 {
-  margin: 0 0 6px;
-  font-size: 16px;
-  font-weight: 700;
+  margin: 0 0 8px;
+  font-size: 20px;
+  font-weight: 900;
 }
 
 .card p {
-  font-size: 13px;
-  line-height: 1.45;
+  font-size: 14px;
+  line-height: 1.55;
   color: #cfd3ff;
 }
 
 /* ===== PRICE ===== */
 .price {
-  margin: 6px 0 10px;
-  font-size: 14px;
-  font-weight: 700;
+  margin: 10px 0 14px;
+  font-size: 18px;
+  font-weight: 900;
   color: #9cffdf;
 }
 
 /* ===== BADGE ===== */
 .badge {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  padding: 4px 10px;
-  border-radius: 12px;
-  font-size: 11px;
-  font-weight: 800;
+  top: 14px;
+  right: 14px;
+  padding: 6px 14px;
+  border-radius: 14px;
+  font-size: 12px;
+  font-weight: 900;
   background: linear-gradient(135deg, #ffce6b, #ff7d7d);
   color: #000;
 }
@@ -163,57 +166,54 @@ button {
   width: 100%;
   background: linear-gradient(135deg, #8f9bff, #c77dff);
   border: none;
-  padding: 12px;
-  border-radius: 14px;
+  padding: 14px;
+  border-radius: 16px;
   color: #0b0e1a;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 15px;
+  font-weight: 900;
   cursor: pointer;
   transition: all 0.25s ease;
 }
 
 button:hover {
-  box-shadow: 0 0 25px rgba(199,125,255,0.7);
+  box-shadow: 0 0 30px rgba(199,125,255,0.8);
 }
 
 .order {
-  margin-top: 8px;
+  margin-top: 10px;
   background: linear-gradient(135deg, #4cffc0, #4c7dff);
 }
 
 /* ===== BACK BUTTON ===== */
 .back-btn {
-  margin-bottom: 14px;
+  margin-bottom: 16px;
   background: rgba(255,255,255,0.08);
   color: #fff;
 }
 
 /* ===== FADE ===== */
 .fade-in {
-  animation: fadeIn 0.35s ease;
+  animation: fadeIn 0.4s ease;
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(12px); }
+  from { opacity: 0; transform: translateY(14px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* ===== FLOATING TELEGRAM AVATAR (КРУГ) ===== */
+/* ===== FLOATING TELEGRAM BUTTON ===== */
 .tg-float {
   position: fixed;
-  bottom: 18px;
-  right: 18px;
-  width: 64px;
-  height: 64px;
+  bottom: 20px;
+  right: 20px;
+  width: 68px;
+  height: 68px;
   border-radius: 50%;
   overflow: hidden;
   cursor: pointer;
   z-index: 9999;
-
-  animation: tg-float 4s ease-in-out infinite,
-             tg-pulse 2.8s infinite;
-
-  box-shadow: 0 12px 30px rgba(143,155,255,0.55);
+  animation: tg-float 4s ease-in-out infinite, tg-pulse 2.8s infinite;
+  box-shadow: 0 14px 34px rgba(143,155,255,0.6);
 }
 
 .tg-float img {
@@ -222,22 +222,15 @@ button:hover {
   object-fit: cover;
 }
 
-/* движение */
 @keyframes tg-float {
   0% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+  50% { transform: translateY(-12px); }
   100% { transform: translateY(0); }
 }
 
-/* пульсация */
 @keyframes tg-pulse {
-  0% {
-    box-shadow: 0 0 0 0 rgba(143,155,255,0.6);
-  }
-  70% {
-    box-shadow: 0 0 0 14px rgba(143,155,255,0);
-  }
-  100% {
-    box-shadow: 0 0 0 0 rgba(143,155,255,0);
-  }
+  0% { box-shadow: 0 0 0 0 rgba(143,155,255,0.6); }
+  70% { box-shadow: 0 0 0 18px rgba(143,155,255,0); }
+  100% { box-shadow: 0 0 0 0 rgba(143,155,255,0); }
 }
+
